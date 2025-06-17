@@ -6,37 +6,14 @@
 -->
 <html>
 	<head>
-		<style>
-		/* 이 페이지에서만 2열로 보이도록 부모 컨테이너에 id 추가 후 사용 가능하면 더 좋음 */
-
-		/* 예: body에 특정 id/class 없으면 #main 혹은 #wrapper 활용 */
-		#main .posts {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 2em;
-			justify-content: space-between;
-		}
-
-		#main .posts article {
-			width: 40%;
-			margin-bottom: 2em;
-			box-sizing: border-box;
-		}
-
-		@media screen and (max-width: 768px) {
-			#main .posts article {
-			width: 100%;
-			}
-		}
-		</style>
-
-		<title>Generic - Editorial by HTML5 UP</title>
+		<title>Editorial by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 		<button id="toggleDark">Mode</button>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -46,7 +23,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Wal-Hwa-Dokzak</strong> by HTML5 UP</a>
+									<a href="index.html" class="logo"><strong style="font-size: 1.2em;">Wal-Hwa-Dokzak</strong> by HTML5 UP</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -56,47 +33,44 @@
 									</ul>
 								</header>
 
-							<!-- Section -->
+							<!-- Content -->
 								<section>
-									<header class="major">
-										<h2>원료에 따른 분류</h2>
+
+									<style>
+										.float-img {
+										float: right;
+										width: 400px;
+										height: auto;
+										margin: 0 0 20px 20px;
+										border-radius: 8px;
+										}
+									</style>
+
+									<img src="images/mix.jpg" alt="약주 이미지" class="float-img" />
+									<section id="mix">
+									<header>
+									<h1>혼성주란?</h1>
+
+									<h2>정의</h2>
+									<p>
+									혼성주는 발효주 또는 증류주에 <strong>과일, 향신료, 허브, 당분 등 다양한 재료</strong>를 첨가해 만든 술입니다. <br>
+									맛과 향이 독특하고, 칵테일과 리큐어 형태로 많이 즐겨집니다.
+									</p>
+
+									<h2>대표적인 종류</h2>
+									<p>
+									칵테일, 매실주, 복분자주, 과하주, 리큐어, 베일리스 등
+									</p>
+
+									<h2>특징</h2>
+									<p>
+									- <strong>감미료나 향신료를 넣어 맛을 풍부하게</strong> 합니다. <br>
+									- <strong>색감, 향, 당도 등 다양성</strong>이 특징이며 소비층이 넓습니다. <br>
+									- <strong>칵테일 베이스나 디저트용 술</strong>로 활용되며, 예술성과 창의성을 반영하기도 합니다.
+									</p>
+
 									</header>
-									<div class="posts">
-										<article>
-											<a href="k-manner copy.html" class="image"><img src="images/gokmul.jpg" alt="" /></a>
-											<h3>곡물주</h3>
-											
-											<ul class="actions">
-												<li><a href="yakju.html" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="d-manner.html" class="image"><img src="images/fruit2.jpg" alt="" /></a>
-											<h3>과실주</h3>
-											
-											<ul class="actions">
-												<li><a href="takju.html" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="s-manner copy.html" class="image"><img src="images/yakyong.jpg" alt="" /></a>
-											<h3>약용주</h3>
-											
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="etc-manner.html" class="image"><img src="images/sungok.jpg" alt="" /></a>
-											<h3>순곡주</h3>
-											
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										
-									</div>
-								</section>
+									</section>
 
 						</div>
 					</div>

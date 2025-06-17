@@ -6,37 +6,14 @@
 -->
 <html>
 	<head>
-		<style>
-		/* 이 페이지에서만 2열로 보이도록 부모 컨테이너에 id 추가 후 사용 가능하면 더 좋음 */
-
-		/* 예: body에 특정 id/class 없으면 #main 혹은 #wrapper 활용 */
-		#main .posts {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 2em;
-			justify-content: space-between;
-		}
-
-		#main .posts article {
-			width: 40%;
-			margin-bottom: 2em;
-			box-sizing: border-box;
-		}
-
-		@media screen and (max-width: 768px) {
-			#main .posts article {
-			width: 100%;
-			}
-		}
-		</style>
-
-		<title>Generic - Editorial by HTML5 UP</title>
+		<title>Editorial by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 		<button id="toggleDark">Mode</button>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -46,7 +23,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Wal-Hwa-Dokzak</strong> by HTML5 UP</a>
+									<a href="index.html" class="logo"><strong style="font-size: 1.2em;">Wal-Hwa-Dokzak</strong> by HTML5 UP</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -56,47 +33,44 @@
 									</ul>
 								</header>
 
-							<!-- Section -->
+							<!-- Content -->
 								<section>
-									<header class="major">
-										<h2>원료에 따른 분류</h2>
+
+									<style>
+										.float-img {
+										float: right;
+										width: 400px;
+										height: auto;
+										margin: 0 0 20px 20px;
+										border-radius: 8px;
+										}
+									</style>
+
+									<img src="images/balhyo2.jpg" alt="약주 이미지" class="float-img" />
+									<section id="balhyo2">
+									<header>
+									<h1>발효주란?</h1>
+
+									<h2>정의</h2>
+									<p>
+									발효주는 곡물, 과일, 꿀 등 천연 원료를 발효시켜 <strong>자연적으로 알코올을 생성</strong>하는 방식으로 만든 술입니다. <br>
+									도수는 일반적으로 <strong>3도에서 15도</strong> 사이로 낮고 부드러운 맛이 특징입니다.
+									</p>
+
+									<h2>대표적인 종류</h2>
+									<p>
+									막걸리, 약주, 청주, 와인, 사케, 맥주 등
+									</p>
+
+									<h2>특징</h2>
+									<p>
+									- <strong>발효 과정만으로 제조</strong>되며 인위적인 증류를 하지 않습니다. <br>
+									- 다양한 원료와 효모에 따라 <strong>풍미와 향이 다채롭습니다.</strong> <br>
+									- 알코올 도수가 낮아 <strong>편하게 즐기기 좋습니다.</strong>
+									</p>
+
 									</header>
-									<div class="posts">
-										<article>
-											<a href="k-manner copy.html" class="image"><img src="images/gokmul.jpg" alt="" /></a>
-											<h3>곡물주</h3>
-											
-											<ul class="actions">
-												<li><a href="yakju.html" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="d-manner.html" class="image"><img src="images/fruit2.jpg" alt="" /></a>
-											<h3>과실주</h3>
-											
-											<ul class="actions">
-												<li><a href="takju.html" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="s-manner copy.html" class="image"><img src="images/yakyong.jpg" alt="" /></a>
-											<h3>약용주</h3>
-											
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="etc-manner.html" class="image"><img src="images/sungok.jpg" alt="" /></a>
-											<h3>순곡주</h3>
-											
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										
-									</div>
-								</section>
+									</section>
 
 						</div>
 					</div>

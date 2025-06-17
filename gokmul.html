@@ -6,37 +6,14 @@
 -->
 <html>
 	<head>
-		<style>
-		/* 이 페이지에서만 2열로 보이도록 부모 컨테이너에 id 추가 후 사용 가능하면 더 좋음 */
-
-		/* 예: body에 특정 id/class 없으면 #main 혹은 #wrapper 활용 */
-		#main .posts {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 2em;
-			justify-content: space-between;
-		}
-
-		#main .posts article {
-			width: 40%;
-			margin-bottom: 2em;
-			box-sizing: border-box;
-		}
-
-		@media screen and (max-width: 768px) {
-			#main .posts article {
-			width: 100%;
-			}
-		}
-		</style>
-
-		<title>Generic - Editorial by HTML5 UP</title>
+		<title>Editorial by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 		<button id="toggleDark">Mode</button>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -46,7 +23,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Wal-Hwa-Dokzak</strong> by HTML5 UP</a>
+									<a href="index.html" class="logo"><strong style="font-size: 1.2em;">Wal-Hwa-Dokzak</strong> by HTML5 UP</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -56,47 +33,45 @@
 									</ul>
 								</header>
 
-							<!-- Section -->
+							<!-- Content -->
 								<section>
-									<header class="major">
-										<h2>원료에 따른 분류</h2>
+
+									<style>
+										.float-img {
+										float: right;
+										width: 400px;
+										height: auto;
+										margin: 0 0 20px 20px;
+										border-radius: 8px;
+										}
+									</style>
+
+									<img src="images/gokmul.jpg" alt="약주 이미지" class="float-img" />
+									<section id="gokmul">
+									<header>
+									<h1>곡물주란?</h1>
+
+									<h2>정의</h2>
+									<p>
+									곡물주는 쌀, 보리, 밀, 옥수수 등 곡류를 주원료로 하여 <strong>발효 또는 증류</strong>시켜 만든 술입니다.<br>
+									인류 역사에서 가장 오래된 술의 형태 중 하나로, <strong>다양한 지역 문화와 결합</strong>되어 발전해 왔습니다.
+									</p>
+
+									<h2>대표적인 종류</h2>
+									<p>
+									막걸리, 소주, 위스키, 보드카, 사케, 청주, 전통약주 등
+									</p>
+
+									<h2>특징</h2>
+									<p>
+									- 전분이 당분으로 전환되는 <strong>당화 과정</strong>이 필요합니다.<br>
+									- 사용되는 곡물의 종류에 따라 <strong>맛과 향, 질감이 달라집니다.</strong><br>
+									- 영양분이 풍부하여 <strong>건강식으로도 활용</strong>되기도 합니다.
+									</p>
+
+
 									</header>
-									<div class="posts">
-										<article>
-											<a href="k-manner copy.html" class="image"><img src="images/gokmul.jpg" alt="" /></a>
-											<h3>곡물주</h3>
-											
-											<ul class="actions">
-												<li><a href="yakju.html" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="d-manner.html" class="image"><img src="images/fruit2.jpg" alt="" /></a>
-											<h3>과실주</h3>
-											
-											<ul class="actions">
-												<li><a href="takju.html" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="s-manner copy.html" class="image"><img src="images/yakyong.jpg" alt="" /></a>
-											<h3>약용주</h3>
-											
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="etc-manner.html" class="image"><img src="images/sungok.jpg" alt="" /></a>
-											<h3>순곡주</h3>
-											
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										
-									</div>
-								</section>
+									</section>
 
 						</div>
 					</div>

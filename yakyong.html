@@ -6,37 +6,14 @@
 -->
 <html>
 	<head>
-		<style>
-		/* 이 페이지에서만 2열로 보이도록 부모 컨테이너에 id 추가 후 사용 가능하면 더 좋음 */
-
-		/* 예: body에 특정 id/class 없으면 #main 혹은 #wrapper 활용 */
-		#main .posts {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 2em;
-			justify-content: space-between;
-		}
-
-		#main .posts article {
-			width: 40%;
-			margin-bottom: 2em;
-			box-sizing: border-box;
-		}
-
-		@media screen and (max-width: 768px) {
-			#main .posts article {
-			width: 100%;
-			}
-		}
-		</style>
-
-		<title>Generic - Editorial by HTML5 UP</title>
+		<title>Editorial by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
 		<button id="toggleDark">Mode</button>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -46,7 +23,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Wal-Hwa-Dokzak</strong> by HTML5 UP</a>
+									<a href="index.html" class="logo"><strong style="font-size: 1.2em;">Wal-Hwa-Dokzak</strong> by HTML5 UP</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -56,47 +33,45 @@
 									</ul>
 								</header>
 
-							<!-- Section -->
+							<!-- Content -->
 								<section>
-									<header class="major">
-										<h2>원료에 따른 분류</h2>
+
+									<style>
+										.float-img {
+										float: right;
+										width: 400px;
+										height: auto;
+										margin: 0 0 20px 20px;
+										border-radius: 8px;
+										}
+									</style>
+
+									<img src="images/yakyong.jpg" alt="약주 이미지" class="float-img" />
+									<section id="yakyong">
+									<header>
+									<h1>약용주란?</h1>
+
+									<h2>정의</h2>
+									<p>
+									약용주는 술에 <strong>한약재, 뿌리, 열매, 껍질, 벌꿀 등</strong>을 넣어 만든 <strong>약효 중심의 술</strong>입니다.<br>
+									전통적으로는 건강 증진, 피로 회복, 보양 등을 위해 마셔졌습니다.
+									</p>
+
+									<h2>대표적인 종류</h2>
+									<p>
+									인삼주, 침향주, 오가피주, 감초주, 복분자주, 대추주, 꿀술 등
+									</p>
+
+									<h2>특징</h2>
+									<p>
+									- <strong>효능에 따라 약재 조합이 달라지며</strong>, 약성과 술맛이 조화를 이룹니다.<br>
+									- 체질에 맞춰 마셔야 하며, <strong>과음은 주의</strong>해야 합니다.<br>
+									- 전통 약재 외에도 <strong>꽃, 열매, 껍질 등을 함께 사용</strong>합니다.
+									</p>
+
+
 									</header>
-									<div class="posts">
-										<article>
-											<a href="k-manner copy.html" class="image"><img src="images/gokmul.jpg" alt="" /></a>
-											<h3>곡물주</h3>
-											
-											<ul class="actions">
-												<li><a href="yakju.html" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="d-manner.html" class="image"><img src="images/fruit2.jpg" alt="" /></a>
-											<h3>과실주</h3>
-											
-											<ul class="actions">
-												<li><a href="takju.html" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="s-manner copy.html" class="image"><img src="images/yakyong.jpg" alt="" /></a>
-											<h3>약용주</h3>
-											
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="etc-manner.html" class="image"><img src="images/sungok.jpg" alt="" /></a>
-											<h3>순곡주</h3>
-											
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										
-									</div>
-								</section>
+									</section>
 
 						</div>
 					</div>
